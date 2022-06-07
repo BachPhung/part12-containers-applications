@@ -1,0 +1,21 @@
+bach@BACH-PHUNG:~$ cat typescript
+Script started on 2022-06-05 09:43:17+07:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="237" LINES="63"]
+bach@BACH-PHUNG:~$ docker exec -it todo-backend-redis-1 bash
+root@6917b6f02b4c:/data# redis-cli
+127.0.0.1:6379> KEYS *
+1) "num_todos"
+127.0.0.1:6379> GET num_todos
+"1"
+127.0.0.1:6379> SET num_todos 9001
+OK
+127.0.0.1:6379> GET num_todos
+"9001"
+127.0.0.1:6379> GET num_todos
+"9002"
+127.0.0.1:6379> exit
+root@6917b6f02b4c:/data# exit
+exit
+bach@BACH-PHUNG:~$ exit
+exit
+
+Script done on 2022-06-05 09:45:16+07:00 [COMMAND_EXIT_CODE="0"]

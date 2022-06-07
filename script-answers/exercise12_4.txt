@@ -1,0 +1,993 @@
+Script started on 2022-06-05 04:56:19+07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="237" LINES="63"]
+]0;bach@BACH-PHUNG: ~[01;32mbach@BACH-PHUNG[00m:[01;34m~[00m$ exitsudo docker start -i a4e9d36ff478
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/a4e9d36ff478/json": dial unix /var/run/docker.sock: connect: permission denied
+]0;bach@BACH-PHUNG: ~[01;32mbach@BACH-PHUNG[00m:[01;34m~[00m$ docker start -i a4e9d36ff478[1@ [1@s[1@u[1@d[1@o
+[sudo] password for bach: 
+[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# 
+[K]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# curl -sL https://deb.nodesource.com/setup_16.x | bash
+[?2004l
+ nodejsbash: curl: command not found
+[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# [Kapt install -y nodejs
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 8%
+
+Reading package lists... 8%
+
+Reading package lists... 9%
+
+Reading package lists... 9%
+
+Reading package lists... 92%
+
+Reading package lists... 92%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... 53%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 7%
+
+Reading state information... Done
+
+The following additional packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js libnghttp2-14 libnode72 libssl3 libuv1 nodejs-doc openssl
+Suggested packages:
+  apache2 | lighttpd | httpd npm
+The following NEW packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js libnghttp2-14 libnode72 libuv1 nodejs nodejs-doc openssl
+The following packages will be upgraded:
+  libssl3
+1 upgraded, 12 newly installed, 0 to remove and 4 not upgraded.
+Need to get 28.0 MB of archives.
+After this operation, 93.0 MB of additional disk space will be used.
+[33m
+0% [Working][0m[33m
+0% [Waiting for headers][0m
+                        
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libssl3 amd64 3.0.2-0ubuntu1.2 [1900 kB]
+[33m
+0% [1 libssl3 4095 B/1900 kB 0%][0m[33m
+0% [1 libssl3 38.7 kB/1900 kB 2%][0m[33m
+                                 
+0% [1 libssl3 153 kB/1900 kB 8%][0m[33m
+1% [1 libssl3 279 kB/1900 kB 15%][0m[33m
+1% [1 libssl3 404 kB/1900 kB 21%][0m[33m
+2% [1 libssl3 528 kB/1900 kB 28%][0m[33m
+2% [1 libssl3 650 kB/1900 kB 34%][0m[33m
+2% [1 libssl3 767 kB/1900 kB 40%][0m[33m
+3% [1 libssl3 886 kB/1900 kB 47%][0m[33m
+3% [1 libssl3 1006 kB/1900 kB 53%][0m[33m
+3% [1 libssl3 1128 kB/1900 kB 59%][0m[33m
+4% [1 libssl3 1245 kB/1900 kB 66%]                                                                                                                                                                                         206 kB/s 2min 10s[0m[33m
+4% [1 libssl3 1367 kB/1900 kB 72%]                                                                                                                                                                                          206 kB/s 2min 9s[0m[33m
+4% [1 libssl3 1478 kB/1900 kB 78%]                                                                                                                                                                                          206 kB/s 2min 9s[0m[33m
+5% [1 libssl3 1595 kB/1900 kB 84%]                                                                                                                                                                                          206 kB/s 2min 8s[0m[33m
+5% [1 libssl3 1713 kB/1900 kB 90%]                                                                                                                                                                                          206 kB/s 2min 8s[0m[33m
+5% [1 libssl3 1839 kB/1900 kB 97%]                                                                                                                                                                                          206 kB/s 2min 7s[0m[33m
+7% [Working]                                                                                                                                                                                                                206 kB/s 2min 7s[0m
+                                                                                                                                                                                                                                            
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.2 [1183 kB]
+[33m
+7% [2 openssl 4915 B/1183 kB 0%]                                                                                                                                                                                            206 kB/s 2min 7s[0m[33m
+7% [2 openssl 125 kB/1183 kB 11%]                                                                                                                                                                                           206 kB/s 2min 6s[0m[33m
+8% [2 openssl 247 kB/1183 kB 21%]                                                                                                                                                                                           206 kB/s 2min 5s[0m[33m
+8% [2 openssl 366 kB/1183 kB 31%]                                                                                                                                                                                           206 kB/s 2min 5s[0m[33m
+8% [2 openssl 489 kB/1183 kB 41%]                                                                                                                                                                                           206 kB/s 2min 4s[0m[33m
+9% [2 openssl 603 kB/1183 kB 51%]                                                                                                                                                                                           206 kB/s 2min 4s[0m[33m
+9% [2 openssl 725 kB/1183 kB 61%]                                                                                                                                                                                          230 kB/s 1min 50s[0m[33m
+9% [2 openssl 842 kB/1183 kB 71%]                                                                                                                                                                                          230 kB/s 1min 50s[0m[33m
+10% [2 openssl 957 kB/1183 kB 81%]                                                                                                                                                                                         230 kB/s 1min 49s[0m[33m
+10% [2 openssl 1074 kB/1183 kB 91%]                                                                                                                                                                                        230 kB/s 1min 49s[0m[33m
+12% [Waiting for headers]                                                                                                                                                                                                  230 kB/s 1min 48s[0m
+                                                                                                                                                                                                                                            
+Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 ca-certificates all 20211016 [148 kB]
+[33m
+12% [3 ca-certificates 1922 B/148 kB 1%]                                                                                                                                                                                   230 kB/s 1min 48s[0m[33m
+12% [3 ca-certificates 116 kB/148 kB 79%]                                                                                                                                                                                  230 kB/s 1min 48s[0m[33m
+14% [Waiting for headers]                                                                                                                                                                                                  230 kB/s 1min 48s[0m
+                                                                                                                                                                                                                                            
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+[33m
+14% [4 libicu70 1020 B/10.6 MB 0%]                                                                                                                                                                                         230 kB/s 1min 48s[0m[33m
+14% [4 libicu70 125 kB/10.6 MB 1%]                                                                                                                                                                                         230 kB/s 1min 47s[0m[33m
+15% [4 libicu70 244 kB/10.6 MB 2%]                                                                                                                                                                                         230 kB/s 1min 46s[0m[33m
+15% [4 libicu70 366 kB/10.6 MB 3%]                                                                                                                                                                                         230 kB/s 1min 46s[0m[33m
+15% [4 libicu70 489 kB/10.6 MB 5%]                                                                                                                                                                                         230 kB/s 1min 45s[0m[33m
+16% [4 libicu70 606 kB/10.6 MB 6%]                                                                                                                                                                                         230 kB/s 1min 45s[0m[33m
+16% [4 libicu70 728 kB/10.6 MB 7%]                                                                                                                                                                                         230 kB/s 1min 44s[0m[33m
+16% [4 libicu70 842 kB/10.6 MB 8%]                                                                                                                                                                                         238 kB/s 1min 40s[0m[33m
+17% [4 libicu70 964 kB/10.6 MB 9%]                                                                                                                                                                                         238 kB/s 1min 39s[0m[33m
+17% [4 libicu70 1089 kB/10.6 MB 10%]                                                                                                                                                                                       238 kB/s 1min 39s[0m[33m
+17% [4 libicu70 1210 kB/10.6 MB 11%]                                                                                                                                                                                       238 kB/s 1min 38s[0m[33m
+18% [4 libicu70 1331 kB/10.6 MB 13%]                                                                                                                                                                                       238 kB/s 1min 38s[0m[33m
+18% [4 libicu70 1449 kB/10.6 MB 14%]                                                                                                                                                                                       238 kB/s 1min 37s[0m[33m
+18% [4 libicu70 1573 kB/10.6 MB 15%]                                                                                                                                                                                       238 kB/s 1min 37s[0m[33m
+19% [4 libicu70 1695 kB/10.6 MB 16%]                                                                                                                                                                                       238 kB/s 1min 36s[0m[33m
+19% [4 libicu70 1817 kB/10.6 MB 17%]                                                                                                                                                                                       238 kB/s 1min 36s[0m[33m
+19% [4 libicu70 1937 kB/10.6 MB 18%]                                                                                                                                                                                       238 kB/s 1min 35s[0m[33m
+20% [4 libicu70 2056 kB/10.6 MB 19%]                                                                                                                                                                                       238 kB/s 1min 35s[0m[33m
+20% [4 libicu70 2176 kB/10.6 MB 21%]                                                                                                                                                                                       238 kB/s 1min 34s[0m[33m
+20% [4 libicu70 2295 kB/10.6 MB 22%]                                                                                                                                                                                       242 kB/s 1min 33s[0m[33m
+21% [4 libicu70 2414 kB/10.6 MB 23%]                                                                                                                                                                                       242 kB/s 1min 32s[0m[33m
+21% [4 libicu70 2537 kB/10.6 MB 24%]                                                                                                                                                                                       242 kB/s 1min 32s[0m[33m
+21% [4 libicu70 2657 kB/10.6 MB 25%]                                                                                                                                                                                       242 kB/s 1min 31s[0m[33m
+22% [4 libicu70 2782 kB/10.6 MB 26%]                                                                                                                                                                                       242 kB/s 1min 31s[0m[33m
+22% [4 libicu70 2907 kB/10.6 MB 27%]                                                                                                                                                                                       242 kB/s 1min 30s[0m[33m
+22% [4 libicu70 3029 kB/10.6 MB 29%]                                                                                                                                                                                       242 kB/s 1min 30s[0m[33m
+23% [4 libicu70 3148 kB/10.6 MB 30%]                                                                                                                                                                                       242 kB/s 1min 29s[0m[33m
+23% [4 libicu70 3268 kB/10.6 MB 31%]                                                                                                                                                                                       242 kB/s 1min 29s[0m[33m
+24% [4 libicu70 3390 kB/10.6 MB 32%]                                                                                                                                                                                       242 kB/s 1min 28s[0m[33m
+24% [4 libicu70 3512 kB/10.6 MB 33%]                                                                                                                                                                                       242 kB/s 1min 28s[0m[33m
+24% [4 libicu70 3632 kB/10.6 MB 34%]                                                                                                                                                                                       242 kB/s 1min 27s[0m[33m
+24% [4 libicu70 3736 kB/10.6 MB 35%]                                                                                                                                                                                       240 kB/s 1min 27s[0m[33m
+25% [4 libicu70 3767 kB/10.6 MB 36%]                                                                                                                                                                                       240 kB/s 1min 27s[0m[33m
+25% [4 libicu70 3889 kB/10.6 MB 37%]                                                                                                                                                                                       240 kB/s 1min 27s[0m[33m
+25% [4 libicu70 4009 kB/10.6 MB 38%]                                                                                                                                                                                       240 kB/s 1min 26s[0m[33m
+26% [4 libicu70 4132 kB/10.6 MB 39%]                                                                                                                                                                                       240 kB/s 1min 26s[0m[33m
+26% [4 libicu70 4253 kB/10.6 MB 40%]                                                                                                                                                                                       240 kB/s 1min 25s[0m[33m
+26% [4 libicu70 4373 kB/10.6 MB 41%]                                                                                                                                                                                       240 kB/s 1min 25s[0m[33m
+27% [4 libicu70 4495 kB/10.6 MB 42%]                                                                                                                                                                                       240 kB/s 1min 24s[0m[33m
+27% [4 libicu70 4615 kB/10.6 MB 44%]                                                                                                                                                                                       240 kB/s 1min 24s[0m[33m
+27% [4 libicu70 4740 kB/10.6 MB 45%]                                                                                                                                                                                       240 kB/s 1min 23s[0m[33m
+28% [4 libicu70 4864 kB/10.6 MB 46%]                                                                                                                                                                                       240 kB/s 1min 23s[0m[33m
+28% [4 libicu70 4989 kB/10.6 MB 47%]                                                                                                                                                                                       240 kB/s 1min 22s[0m[33m
+28% [4 libicu70 5111 kB/10.6 MB 48%]                                                                                                                                                                                       229 kB/s 1min 26s[0m[33m
+29% [4 libicu70 5234 kB/10.6 MB 49%]                                                                                                                                                                                       229 kB/s 1min 25s[0m[33m
+29% [4 libicu70 5356 kB/10.6 MB 51%]                                                                                                                                                                                       229 kB/s 1min 24s[0m^C
+[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# apt-get install curl
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 8%
+
+Reading package lists... 8%
+
+Reading package lists... 9%
+
+Reading package lists... 9%
+
+Reading package lists... 92%
+
+Reading package lists... 92%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 7%
+
+Reading state information... Done
+
+The following additional packages will be installed:
+  ca-certificates libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 libssl3 openssl publicsuffix
+Suggested packages:
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl libbrotli1 libcurl4 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4 openssl publicsuffix
+The following packages will be upgraded:
+  libssl3
+1 upgraded, 15 newly installed, 0 to remove and 4 not upgraded.
+Need to get 1639 kB/4869 kB of archives.
+After this operation, 7055 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+
+57% [Working]
+57% [Waiting for headers]
+                         
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnghttp2-14 amd64 1.43.0-1build3 [76.3 kB]
+
+57% [1 libnghttp2-14 4098 B/76.3 kB 5%]
+57% [1 libnghttp2-14 38.7 kB/76.3 kB 51%]
+                                         
+59% [Working]
+             
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpsl5 amd64 0.21.0-1.2build2 [58.4 kB]
+
+59% [2 libpsl5 4919 B/58.4 kB 8%]
+                                 
+62% [Waiting for headers]
+                         
+Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 publicsuffix all 20211207.1025-1 [129 kB]
+
+62% [3 publicsuffix 848 B/129 kB 1%]
+63% [3 publicsuffix 99.6 kB/129 kB 77%]
+                                       
+65% [Waiting for headers]
+                         
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+
+65% [4 libbrotli1 1037 B/315 kB 0%]
+67% [4 libbrotli1 113 kB/315 kB 36%]
+69% [4 libbrotli1 230 kB/315 kB 73%]
+                                    
+71% [Waiting for headers]
+                         
+Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg2-3ubuntu1 [20.8 kB]
+
+71% [5 libsasl2-modules-db 240 B/20.8 kB 1%]
+                                            
+73% [Waiting for headers]
+                         
+Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsasl2-2 amd64 2.1.27+dfsg2-3ubuntu1 [53.9 kB]
+
+73% [6 libsasl2-2 1263 B/53.9 kB 2%]
+                                    
+75% [Waiting for headers]
+                         
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.11+dfsg-1~exp1ubuntu3.1 [184 kB]
+
+75% [7 libldap-2.5-0 370 B/184 kB 0%]
+77% [7 libldap-2.5-0 120 kB/184 kB 65%]
+                                       
+79% [Waiting for headers]
+                         
+Get:8 http://archive.ubuntu.com/ubuntu jammy/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build4 [58.2 kB]
+
+79% [8 librtmp1 3187 B/58.2 kB 5%]
+                                  
+82% [Waiting for headers]
+                         
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libssh-4 amd64 0.9.6-2build1 [184 kB]
+
+82% [9 libssh-4 4514 B/184 kB 2%]
+84% [9 libssh-4 124 kB/184 kB 67%]
+                                  
+86% [Waiting for headers]
+                         
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.2 [290 kB]
+
+86% [10 libcurl4 1865 B/290 kB 1%]
+88% [10 libcurl4 119 kB/290 kB 41%]                                                                                                                                                                                              735 kB/s 0s
+90% [10 libcurl4 238 kB/290 kB 82%]                                                                                                                                                                                              735 kB/s 0s
+92% [Working]                                                                                                                                                                                                                    735 kB/s 0s
+                                                                                                                                                                                                                                            
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.2 [194 kB]
+
+92% [11 curl 356 B/194 kB 0%]                                                                                                                                                                                                    735 kB/s 0s
+94% [11 curl 120 kB/194 kB 62%]                                                                                                                                                                                                  735 kB/s 0s
+96% [Waiting for headers]                                                                                                                                                                                                        735 kB/s 0s
+                                                                                                                                                                                                                                            
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.11+dfsg-1~exp1ubuntu3.1 [16.8 kB]
+
+96% [12 libldap-common 1001 B/16.8 kB 6%]                                                                                                                                                                                        735 kB/s 0s
+98% [Waiting for headers]                                                                                                                                                                                                        735 kB/s 0s
+                                                                                                                                                                                                                                            
+Get:13 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsasl2-modules amd64 2.1.27+dfsg2-3ubuntu1 [57.5 kB]
+
+98% [13 libsasl2-modules 2132 B/57.5 kB 4%]                                                                                                                                                                                      735 kB/s 0s
+100% [Working]                                                                                                                                                                                                                   735 kB/s 0s
+                                                                                                                                                                                                                                            
+Fetched 1639 kB in 8s (209 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 7111 files and directories currently installed.)
+Preparing to unpack .../libssl3_3.0.2-0ubuntu1.2_amd64.deb ...
+Unpacking libssl3:amd64 (3.0.2-0ubuntu1.2) over (3.0.2-0ubuntu1) ...
+Setting up libssl3:amd64 (3.0.2-0ubuntu1.2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Selecting previously unselected package openssl.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 7111 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.2-0ubuntu1.2_amd64.deb ...
+Unpacking openssl (3.0.2-0ubuntu1.2) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20211016_all.deb ...
+Unpacking ca-certificates (20211016) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../02-libnghttp2-14_1.43.0-1build3_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1build3) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../03-libpsl5_0.21.0-1.2build2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2build2) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../04-publicsuffix_20211207.1025-1_all.deb ...
+Unpacking publicsuffix (20211207.1025-1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../05-libbrotli1_1.0.9-2build6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../06-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../07-libsasl2-2_2.1.27+dfsg2-3ubuntu1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../08-libldap-2.5-0_2.5.11+dfsg-1~exp1ubuntu3.1_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.11+dfsg-1~exp1ubuntu3.1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../09-librtmp1_2.4+20151223.gitfa8646d.1-2build4_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../10-libssh-4_0.9.6-2build1_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.6-2build1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../11-libcurl4_7.81.0-1ubuntu1.2_amd64.deb ...
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../12-curl_7.81.0-1ubuntu1.2_amd64.deb ...
+Unpacking curl (7.81.0-1ubuntu1.2) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../13-libldap-common_2.5.11+dfsg-1~exp1ubuntu3.1_all.deb ...
+Unpacking libldap-common (2.5.11+dfsg-1~exp1ubuntu3.1) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../14-libsasl2-modules_2.1.27+dfsg2-3ubuntu1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up libpsl5:amd64 (0.21.0-1.2build2) ...
+Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1build3) ...
+Setting up libldap-common (2.5.11+dfsg-1~exp1ubuntu3.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+Setting up libssh-4:amd64 (0.9.6-2build1) ...
+Setting up openssl (3.0.2-0ubuntu1.2) ...
+Setting up publicsuffix (20211207.1025-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.11+dfsg-1~exp1ubuntu3.1) ...
+Setting up ca-certificates (20211016) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+127 added, 0 removed; done.
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.2) ...
+Setting up curl (7.81.0-1ubuntu1.2) ...
+Processing triggers for libc-bin (2.35-0ubuntu3) ...
+Processing triggers for ca-certificates (20211016) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# apt-get install curl install -y nodejs
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 8%
+
+Reading package lists... 8%
+
+Reading package lists... 9%
+
+Reading package lists... 9%
+
+Reading package lists... 92%
+
+Reading package lists... 92%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 3%
+
+Reading state information... Done
+
+The following additional packages will be installed:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1 nodejs-doc
+Suggested packages:
+  apache2 | lighttpd | httpd npm
+The following NEW packages will be installed:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1 nodejs nodejs-doc
+0 upgraded, 8 newly installed, 0 to remove and 4 not upgraded.
+Need to get 24.4 MB of archives.
+After this operation, 89.5 MB of additional disk space will be used.
+[33m
+0% [Working][0m[33m
+0% [Waiting for headers][0m
+                        
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+[33m
+0% [1 libicu70 3774 B/10.6 MB 0%][0m^C
+[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# curl -sL https://deb.nodesource.com/setup_16.x | bash
+[?2004l
+
+## Installing the NodeSource Node.js 16.x repo...
+
+
+## Populating apt-get cache...
+
++ apt-get update
+
+0% [Working]
+0% [Waiting for headers] [Connecting to security.ubuntu.com (91.189.91.38)]
+                                                                           
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+
+                                                                           
+0% [Connecting to security.ubuntu.com (91.189.91.38)]
+                                                     
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+
+                                              
+0% [Waiting for headers]
+                        
+Hit:3 http://security.ubuntu.com/ubuntu jammy-security InRelease
+
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Hit:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+
+                        
+0% [Working]
+20% [Working]
+             
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 8%
+
+Reading package lists... 8%
+
+Reading package lists... 9%
+
+Reading package lists... 9%
+
+Reading package lists... 87%
+
+Reading package lists... 92%
+
+Reading package lists... 92%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+## Installing packages required for setup: lsb-release gnupg...
+
++ apt-get install -y lsb-release gnupg > /dev/null 2>&1
+
+## Confirming "jammy" is supported...
+
++ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_16.x/dists/jammy/Release'
+
+## Adding the NodeSource signing key to your keyring...
+
++ curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | tee /usr/share/keyrings/nodesource.gpg >/dev/null
+
+## Creating apt sources list file for the NodeSource Node.js 16.x repo...
+
++ echo 'deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x jammy main' > /etc/apt/sources.list.d/nodesource.list
++ echo 'deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x jammy main' >> /etc/apt/sources.list.d/nodesource.list
+
+## Running `apt-get update` for you...
+
++ apt-get update
+
+0% [Working]
+            
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+
+0% [Waiting for headers] [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers]
+                                                                    
+Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+
+                                                                    
+0% [Waiting for headers] [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+
+                                              
+0% [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+
+                                              
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Get:5 https://deb.nodesource.com/node_16.x jammy InRelease [4583 B]
+
+0% [5 InRelease 4583 B/4583 B 100%]
+                                   
+0% [Working]
+88% [Working]
+             
+Get:6 https://deb.nodesource.com/node_16.x jammy/main amd64 Packages [773 B]
+
+100% [6 Packages 773 B/773 B 100%]
+                                  
+100% [Working]
+100% [6 Packages store 0 B]
+                           
+100% [Working]
+              
+Fetched 5356 B in 1s (3633 B/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 8%
+
+Reading package lists... 8%
+
+Reading package lists... 9%
+
+Reading package lists... 9%
+
+Reading package lists... 92%
+
+Reading package lists... 92%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+## Run `[1msudo apt-get install -y nodejs(B[m` to install Node.js 16.x and npm
+## You may also need development tools to build native addons:
+     sudo apt-get install gcc g++ make
+## To install the Yarn package manager, run:
+     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+     echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt-get update && sudo apt-get install yarn
+
+
+[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# [Kapt install -y nodejs
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 8%
+
+Reading package lists... 8%
+
+Reading package lists... 9%
+
+Reading package lists... 9%
+
+Reading package lists... 92%
+
+Reading package lists... 92%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 97%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... 55%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 2%
+
+Reading state information... Done
+
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 4 not upgraded.
+Need to get 26.4 MB of archives.
+After this operation, 124 MB of additional disk space will be used.
+[33m
+0% [Working][0m
+            
+Get:1 https://deb.nodesource.com/node_16.x jammy/main amd64 nodejs amd64 16.15.1-deb-1nodesource1 [26.4 MB]
+[33m
+0% [1 nodejs 16.2 kB/26.4 MB 0%][0m[33m
+16% [1 nodejs 5151 kB/26.4 MB 20%][0m[33m
+30% [1 nodejs 9988 kB/26.4 MB 38%][0m[33m
+44% [1 nodejs 14.6 MB/26.4 MB 55%][0m[33m
+60% [1 nodejs 19.9 MB/26.4 MB 75%][0m[33m
+76% [1 nodejs 24.9 MB/26.4 MB 94%][0m[33m
+                                  
+100% [Working][0m
+              
+Fetched 26.4 MB in 3s (9651 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;62r8[1ASelecting previously unselected package nodejs.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 7991 files and directories currently installed.)
+Preparing to unpack .../nodejs_16.15.1-deb-1nodesource1_amd64.deb ...
+7[63;0f[42m[30mProgress: [  0%][49m[39m [.......................................................................................................................................................................................................................] 87[63;0f[42m[30mProgress: [ 20%][49m[39m [###########################################............................................................................................................................................................................] 8Unpacking nodejs (16.15.1-deb-1nodesource1) ...
+7[63;0f[42m[30mProgress: [ 40%][49m[39m [######################################################################################.................................................................................................................................] 8Setting up nodejs (16.15.1-deb-1nodesource1) ...
+7[63;0f[42m[30mProgress: [ 60%][49m[39m [#################################################################################################################################......................................................................................] 87[63;0f[42m[30mProgress: [ 80%][49m[39m [############################################################################################################################################################################...........................................] 8
+7[0;63r8[1A[J[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# node /ur sr/src/app/index.js
+[?2004l
+Hello World
+[?2004h]0;root@a4e9d36ff478: /root@a4e9d36ff478:/# [Kexit
+[?2004l
+exit
+]0;bach@BACH-PHUNG: ~[01;32mbach@BACH-PHUNG[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2022-06-05 04:59:14+07:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,28 @@
+bach@BACH-PHUNG:~$ cat typescript
+Script started on 2022-06-05 04:40:58+07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="237" LINES="63"]
+bach@BACH-PHUNG:~$ docker container run -it ubuntu bash
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+bach@BACH-PHUNG:~$ sudo docker container run -it ubuntu bash
+[sudo] password for bach:
+root@a4e9d36ff478:/# ls
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@a4e9d36ff478:/# cd /usr
+root@a4e9d36ff478:/usr# ls
+bin  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+root@a4e9d36ff478:/usr# cd src/
+root@a4e9d36ff478:/usr/src# ls -a
+.  ..
+root@a4e9d36ff478:/usr/src# mkdir app
+root@a4e9d36ff478:/usr/src# cd app/
+root@a4e9d36ff478:/usr/src/app# touch index.js
+root@a4e9d36ff478:/usr/src/app# ls
+index.js
+root@a4e9d36ff478:/usr/src/app# pwd
+/usr/src/app
+root@a4e9d36ff478:/usr/src/app# exit
+exit
+bach@BACH-PHUNG:~$ exit
+exit
+
+Script done on 2022-06-05 04:42:32+07:00 [COMMAND_EXIT_CODE="0"]

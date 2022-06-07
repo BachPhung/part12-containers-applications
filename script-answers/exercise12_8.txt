@@ -1,0 +1,51 @@
+Script started on 2022-06-05 08:28:01+07:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="30"]
+bach@BACH-PHUNG:~$ docker exec -it todo-backend-mongo-1 bash
+root@927df9bf7406:/# mongo -u root -p example
+MongoDB shell version v5.0.9
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("28c3ca5a-7958-4a7b-9648-25f443dc5536") }
+MongoDB server version: 5.0.9
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-06-05T01:25:39.915+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+        2022-06-05T01:25:40.737+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database
+switched to db the_database
+> show collections
+todos
+> db.todos.find({})
+{ "_id" : ObjectId("629bf73e1b788f0328cd5b96"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("629bf73e1b788f0328cd5b97"), "text" : "Learn about containers", "done" : false }
+> db.todos.insert({text: 'Increase the number of tools in my toolbelt, "done": false})
+uncaught exception: SyntaxError: '' literal not terminated before end of script :
+@(shell):1:84
+> db.todos.insert({text: "Increase the number of tools in my toolbelt", "done": false})
+WriteResult({ "nInserted" : 1 })
+> db.todos.find({})
+{ "_id" : ObjectId("629bf73e1b788f0328cd5b96"), "text" : "Write code", "done" : true }
+{ "_id" : ObjectId("629bf73e1b788f0328cd5b97"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("629c075dd214fae1d2889819"), "text" : "Increase the number of tools in my toolbelt", "done" : false }
