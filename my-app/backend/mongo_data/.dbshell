@@ -1,0 +1,12 @@
+show dbs
+show dbs
+show dbs
+dbs
+show dbs
+use the_database
+find
+show collections
+db.phones.find({})
+db.phones.find({})
+use the_database
+db.phones.find({})
